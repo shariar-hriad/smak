@@ -1,0 +1,62 @@
+/*banner component*/
+.bannerArea {
+  background: url(/assets/images/banner.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .contentWrapper {
+    background: rgba($color: $secondary_color, $alpha: 0.7);
+    width: 100%;
+    color: $white-color;
+    text-align: center;
+    margin-top: 65px;
+  }
+
+  .bannerContent {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px 0;
+
+    h1 {
+      font-size: 34.66px;
+      line-height: 45px;
+      margin-top: 0;
+    }
+    a {
+      color: #000;
+      font-weight: 700;
+      text-transform: uppercase;
+      display: inline-block;
+      background: $primary_color;
+      padding: 10px 15px;
+    }
+  }
+}
+
+@include min-width(992px) {
+  .bannerArea {
+    .bannerContent {
+      h1 {
+        font-size: 54.66px;
+        line-height: 65px;
+        margin-top: 0;
+      }
+      a {
+        color: #000;
+        font-weight: 700;
+        text-transform: uppercase;
+        display: inline-block;
+        background: $primary_color;
+        padding: 10px 15px;
+      }
+    }
+  }
+}
+
+/*banner component end*/
