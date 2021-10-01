@@ -267,7 +267,6 @@ img {
 /*Header Area End*/
 /*banner component*/
 .bannerArea {
-  background: url(/assets/images/banner.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
